@@ -22,12 +22,32 @@ let initBulma = () => {
     });
   }
 
+  // Close notifications when the delete button is clicked within a notification.
+  let closeNotificationButtons = Array.prototype.slice.call(
+    document.querySelectorAll('.notification > .delete'),
+    0
+  );
+
+  closeNotificationButtons.forEach(el => {
+    el.addEventListener('click', event => {
+      let notification = event.target.closest('.notification');
+      notification.parentNode.removeChild(notification);
+    });
+  });
+
+  initDropdowns();
+};
+
+let initDropdowns = () => {
+  console.log('initing dropdowns');
   // Dropdowns
   let $dropdowns = getAll('.dropdown:not(.is-hoverable)');
+  console.log($dropdowns);
 
   if ($dropdowns.length > 0) {
     $dropdowns.forEach(function($el) {
-      $el.addEventListener('click', function(event) {
+      console.log($el);
+      $el.addEventListener('click', function(_event) {
         // If the dropdown has the 'js-no-close-on-click' class,
         // it shouldn't be toggled when active.
         if (
@@ -67,22 +87,13 @@ let initBulma = () => {
   function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
   }
-
-  // Close notifications when the delete button is clicked within a notification.
-  let closeNotificationButtons = Array.prototype.slice.call(
-    document.querySelectorAll('.notification > .delete'),
-    0
-  );
-
-  closeNotificationButtons.forEach(el => {
-    el.addEventListener('click', event => {
-      let notification = event.target.closest('.notification');
-      notification.parentNode.removeChild(notification);
-    });
-  });
 };
 
 document.addEventListener('turbolinks:load', initBulma());
 window.addEventListener('load', function() {
   document.body.addEventListener('bulma:init', initBulma());
+});
+
+window.addEventListener('load', function() {
+  document.body.addEventListener('dropdowns:init', initDropdowns());
 });

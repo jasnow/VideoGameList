@@ -9,6 +9,14 @@
     :search-options="{
       enabled: false
     }"
+    :select-options="{
+      enabled: isEditable, // only show checkboxes if the table is editable
+      selectOnCheckboxOnly: true, // only select when checkbox is clicked instead of the row
+      selectionInfoClass: 'selection-info-bar',
+      selectionText: 'rows selected',
+      clearSelectionText: 'clear',
+    }"
+    @on-selected-rows-change="selectionChanged"
   >
     <div slot="table-actions">
       <div class="dropdown is-right is-fullwidth-mobile mr-5 mr-0-mobile js-no-close-on-click">
@@ -41,6 +49,28 @@
         @click="addGame()"
         class="button is-fullwidth-mobile mr-5 mr-0-mobile"
       >Add a game to your library</button>
+    </div>
+    <div v-if="isEditable" slot="selected-row-actions">
+      <div class="dropdown is-right is-fullwidth-mobile mr-5 mr-0-mobile">
+        <div class="dropdown-trigger is-fullwidth-mobile">
+          <button
+            class="button is-fullwidth-mobile"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+          >
+            <span>Set Completion Status</span>
+          </button>
+        </div>
+        <div class="dropdown-menu is-fullwidth-mobile" role="menu">
+          <div class="dropdown-content">
+            <div
+              class="dropdown-item no-link-highlight"
+              v-for="completionStatus in completionStatuses"
+              :key="completionStatus"
+            >{{ completionStatus }}</div>
+          </div>
+        </div>
+      </div>
     </div>
     <template slot="table-row" slot-scope="props">
       <span v-if="props.column.field == 'after'">
@@ -174,6 +204,15 @@ export default {
           hidden: false,
           index: 7
         }
+      ],
+      completionStatuses: [
+        'unplayed',
+        'in_progress',
+        'dropped',
+        'completed',
+        'fully_completed',
+        'not_applicable',
+        'paused'
       ]
     };
   },
@@ -249,6 +288,9 @@ export default {
     toggleColumn(index, event) {
       // Set hidden to inverse of what it currently is
       this.$set(this.columns[index], 'hidden', !this.columns[index].hidden);
+    },
+    selectionChanged(selectedRows) {
+      document.body.dispatchEvent(new Event('dropdowns:init'));
     }
   }
 };
