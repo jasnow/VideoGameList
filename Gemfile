@@ -64,6 +64,9 @@ gem 'sentry-raven', '~> 2.9'
 gem 'sorbet', :group => :development
 gem 'sorbet-runtime'
 gem 'sorbet-rails'
+gem 'dalli'    # 7/17/2019: Required by sorbet but not app.
+gem 'redis'    # 7/17/2019: Required by sorbet but not app.
+gem 'omniauth' # 7/17/2019: Required by sorbet but not app.
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
