@@ -49,19 +49,19 @@ GEM
     arel (9.0.0)
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-partitions (1.162.0)
-    aws-sdk-core (3.52.1)
+    aws-partitions (1.189.0)
+    aws-sdk-core (3.59.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
       aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sdk-kms (1.20.0)
-      aws-sdk-core (~> 3, >= 3.52.1)
+    aws-sdk-kms (1.23.0)
+      aws-sdk-core (~> 3, >= 3.58.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.39.0)
-      aws-sdk-core (~> 3, >= 3.52.1)
+    aws-sdk-s3 (1.45.0)
+      aws-sdk-core (~> 3, >= 3.58.0)
       aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.0)
+      aws-sigv4 (~> 1.1)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.13)
@@ -182,7 +182,8 @@ GEM
       activerecord (>= 4.2)
       activesupport (>= 4.2)
     public_suffix (3.1.1)
-    puma (3.12.1)
+    puma (4.0.1)
+      nio4r (~> 2.0)
     pundit (2.0.1)
       activesupport (>= 3.0.0)
     pundit-matchers (1.6.0)
@@ -254,7 +255,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    rubocop (0.71.0)
+    rubocop (0.73.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -263,9 +264,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     rubocop-performance (1.4.0)
       rubocop (>= 0.71.0)
-    rubocop-rails (2.0.1)
+    rubocop-rails (2.2.1)
       rack (>= 1.1)
-      rubocop (>= 0.70.0)
+      rubocop (>= 0.72.0)
     rubocop-rspec (1.33.0)
       rubocop (>= 0.60.0)
     ruby-graphviz (1.2.4)
@@ -284,6 +285,11 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
+    sorbet (0.4.4446)
+      sorbet-static (= 0.4.4446)
+    sorbet-rails (0.4.0)
+    sorbet-runtime (0.4.4446)
+    sorbet-static (0.4.4446-universal-darwin-14)
     sparql (3.0.2)
       builder (~> 3.2)
       ebnf (~> 1.1)
@@ -364,7 +370,7 @@ DEPENDENCIES
   mini_magick (~> 4.9)
   pg (>= 0.18, < 2.0)
   pg_search (~> 2.3)
-  puma (~> 3.12)
+  puma
   pundit (~> 2.0)
   pundit-matchers (~> 1.6.0)
   rails (~> 5.2.3)
@@ -379,6 +385,9 @@ DEPENDENCIES
   sentry-raven (~> 2.9)
   shoulda-matchers (= 4.1.1)
   simplecov (~> 0.17)
+  sorbet
+  sorbet-rails
+  sorbet-runtime
   sparql (~> 3.0.2)
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -388,7 +397,7 @@ DEPENDENCIES
   webpacker (~> 4.0.7)
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.6.3p62
 
 BUNDLED WITH
-   2.0.1
+   1.17.3
