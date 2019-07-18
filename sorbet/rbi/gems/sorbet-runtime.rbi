@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/sorbet-runtime/all/sorbet-runtime.rbi
 #
-# sorbet-runtime-0.4.4446
+# sorbet-runtime-0.4.4463
 module T::Configuration
   def self.call_validation_error_handler(signature, opts); end
   def self.call_validation_error_handler=(value); end
@@ -166,8 +166,21 @@ module T::Sig::WithoutRuntime
 end
 module T::Helpers
   def abstract!; end
+  def final!; end
   def interface!; end
   def mixes_in_class_methods(mod); end
+end
+module T::Private::Final
+  def self.declare(mod); end
+  def self.final_module?(mod); end
+  def self.mark_as_final_module(mod); end
+end
+module T::Private::Final::NoInherit
+  def inherited(arg); end
+end
+module T::Private::Final::NoIncludeExtend
+  def extended(arg); end
+  def included(arg); end
 end
 module T::Types
 end

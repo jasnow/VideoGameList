@@ -1714,33 +1714,23 @@ module ActionView::CollectionCaching
 end
 
 module ActionView::CompiledTemplates
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222567944420(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337436546480(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222567995540(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337510351240(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222597516080(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337511907860(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222608443340(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337512225240(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222609012280(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337513252500(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222610174140(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337527999460(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222618034380(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337530322100(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222627242820(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337532031940(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222629225160(local_assigns, output_buffer); end
-
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222632293640(local_assigns, output_buffer); end
-
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222633820700(local_assigns, output_buffer); end
-
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222634296860(local_assigns, output_buffer); end
-
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222637218840(local_assigns, output_buffer); end
-
-  def _app_views_devise_mailer_confirmation_instructions_html_erb__3646921206986154965_70222640332660(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2291079309527254605_70337532279060(local_assigns, output_buffer); end
 end
 
 module ActionView::CompiledTemplates
@@ -9808,8 +9798,6 @@ module Enumerable
   def filter(); end
 
   def grep_v(_); end
-
-  def lazy(); end
 
   def slice_after(*_); end
 
@@ -18527,25 +18515,8 @@ class JSON::CircularDatastructure
   extend ::T::Sig
 end
 
-module JSON::Ext
-end
-
-module JSON::Ext::Generator
-end
-
-module JSON::Ext::Generator::GeneratorMethods
-end
-
-module JSON::Ext::Generator::GeneratorMethods::Array
-  def to_json(*_); end
-end
-
 module JSON::Ext::Generator::GeneratorMethods::Array
   extend ::T::Sig
-end
-
-module JSON::Ext::Generator::GeneratorMethods::FalseClass
-  def to_json(*_); end
 end
 
 module JSON::Ext::Generator::GeneratorMethods::FalseClass
@@ -18553,15 +18524,7 @@ module JSON::Ext::Generator::GeneratorMethods::FalseClass
 end
 
 module JSON::Ext::Generator::GeneratorMethods::Float
-  def to_json(*_); end
-end
-
-module JSON::Ext::Generator::GeneratorMethods::Float
   extend ::T::Sig
-end
-
-module JSON::Ext::Generator::GeneratorMethods::Hash
-  def to_json(*_); end
 end
 
 module JSON::Ext::Generator::GeneratorMethods::Hash
@@ -18569,15 +18532,7 @@ module JSON::Ext::Generator::GeneratorMethods::Hash
 end
 
 module JSON::Ext::Generator::GeneratorMethods::Integer
-  def to_json(*_); end
-end
-
-module JSON::Ext::Generator::GeneratorMethods::Integer
   extend ::T::Sig
-end
-
-module JSON::Ext::Generator::GeneratorMethods::NilClass
-  def to_json(*_); end
 end
 
 module JSON::Ext::Generator::GeneratorMethods::NilClass
@@ -18585,27 +18540,11 @@ module JSON::Ext::Generator::GeneratorMethods::NilClass
 end
 
 module JSON::Ext::Generator::GeneratorMethods::Object
-  def to_json(*_); end
-end
-
-module JSON::Ext::Generator::GeneratorMethods::Object
   extend ::T::Sig
 end
 
 module JSON::Ext::Generator::GeneratorMethods::String
-  def to_json(*_); end
-
-  def to_json_raw(*_); end
-
-  def to_json_raw_object(); end
-end
-
-module JSON::Ext::Generator::GeneratorMethods::String
   extend ::T::Sig
-end
-
-module JSON::Ext::Generator::GeneratorMethods::TrueClass
-  def to_json(*_); end
 end
 
 module JSON::Ext::Generator::GeneratorMethods::TrueClass
@@ -18617,62 +18556,11 @@ module JSON::Ext::Generator::GeneratorMethods
 end
 
 class JSON::Ext::Generator::State
-  def [](_); end
-
-  def []=(_, _1); end
-
-  def allow_nan?(); end
-
-  def array_nl(); end
-
-  def array_nl=(array_nl); end
-
-  def ascii_only?(); end
-
-  def buffer_initial_length(); end
-
-  def buffer_initial_length=(buffer_initial_length); end
-
-  def check_circular?(); end
-
-  def configure(_); end
-
-  def depth(); end
-
-  def depth=(depth); end
-
-  def generate(_); end
-
-  def indent(); end
-
-  def indent=(indent); end
-
-  def initialize(*_); end
-
-  def max_nesting(); end
-
-  def max_nesting=(max_nesting); end
-
-  def merge(_); end
-
-  def object_nl(); end
-
-  def object_nl=(object_nl); end
-
-  def space(); end
-
-  def space=(space); end
-
-  def space_before(); end
-
-  def space_before=(space_before); end
-
-  def to_h(); end
-
-  def to_hash(); end
+  include ::ActiveSupport::ToJsonWithActiveSupportEncoder
 end
 
 class JSON::Ext::Generator::State
+  extend ::T::Sig
   def self.from_state(_); end
 end
 
@@ -18681,14 +18569,12 @@ module JSON::Ext::Generator
 end
 
 class JSON::Ext::Parser
+  include ::ActiveSupport::ToJsonWithActiveSupportEncoder
   def initialize(*_); end
-
-  def parse(); end
-
-  def source(); end
 end
 
 class JSON::Ext::Parser
+  extend ::T::Sig
 end
 
 module JSON::Ext
@@ -41055,8 +40941,6 @@ class String
   def funcall_style(); end
 
   def grapheme_clusters(); end
-
-  def match?(*_); end
 
   def quote(); end
 
