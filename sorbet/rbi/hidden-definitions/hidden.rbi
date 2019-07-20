@@ -1714,19 +1714,29 @@ module ActionView::CollectionCaching
 end
 
 module ActionView::CompiledTemplates
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70316990446180(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187034076500(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317052109060(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187041562960(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317052575040(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187042024740(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317052821540(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187042220340(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317064012500(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187044614820(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317065498160(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187044916880(local_assigns, output_buffer); end
 
-  def _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317065963320(local_assigns, output_buffer); end
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187052040760(local_assigns, output_buffer); end
+
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187052096040(local_assigns, output_buffer); end
+
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187054619140(local_assigns, output_buffer); end
+
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187064821280(local_assigns, output_buffer); end
+
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187069025880(local_assigns, output_buffer); end
+
+  def _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187076291100(local_assigns, output_buffer); end
 end
 
 module ActionView::CompiledTemplates
@@ -2927,7 +2937,6 @@ module ActiveRecord::AttributeMethods::AttrNames
   ATTR_57375627e616d656 = ::T.let(nil, ::T.untyped)
   ATTR_57e636f6e6669627d65646f556d61696c6 = ::T.let(nil, ::T.untyped)
   ATTR_6696c656e616d656 = ::T.let(nil, ::T.untyped)
-  ATTR_6716c65756 = ::T.let(nil, ::T.untyped)
   ATTR_7796b69646164716f59646 = ::T.let(nil, ::T.untyped)
   ATTR_b65697 = ::T.let(nil, ::T.untyped)
   ATTR_c6163747f5379676e6f596e6f51647 = ::T.let(nil, ::T.untyped)
@@ -3379,8 +3388,28 @@ module ActiveRecord::Integration
   extend ::T::Sig
 end
 
+class ActiveRecord::InternalMetadata
+  include ::ActiveRecord::InternalMetadata::GeneratedAssociationMethods
+  include ::Kaminari::ActiveRecordModelExtension
+  include ::Kaminari::ConfigurationMethods
+end
+
+module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
+end
+
 module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
   extend ::T::Sig
+end
+
+class ActiveRecord::InternalMetadata
+  extend ::Kaminari::ConfigurationMethods::ClassMethods
+  def self.[](key); end
+
+  def self.[]=(key, value); end
+
+  def self.create_table(); end
+
+  def self.page(num=T.unsafe(nil)); end
 end
 
 module ActiveRecord::LegacyYamlAdapter::Rails41
@@ -3719,6 +3748,10 @@ end
 
 module ActiveRecord::Sanitization
   extend ::T::Sig
+end
+
+class ActiveRecord::Schema
+  def define(info, &block); end
 end
 
 module ActiveRecord::SchemaMigration::GeneratedAssociationMethods

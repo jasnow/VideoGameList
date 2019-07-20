@@ -641,13 +641,18 @@
 # wrong constant name unknown_asset_fallback
 # wrong constant name unknown_asset_fallback=
 # wrong constant name unknown_asset_fallback?
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70316990446180
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317052109060
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317052575040
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317052821540
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317064012500
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317065498160
-# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb___1811901799438971695_70317065963320
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187034076500
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187041562960
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187042024740
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187042220340
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187044614820
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187044916880
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187052040760
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187052096040
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187054619140
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187064821280
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187069025880
+# wrong constant name _app_views_devise_mailer_confirmation_instructions_html_erb__2300856495130612381_70187076291100
 # wrong constant name <static-init>
 # uninitialized constant ActionView::LogSubscriber::BLACK
 # uninitialized constant ActionView::LogSubscriber::BLUE
@@ -951,6 +956,21 @@
 # uninitialized constant ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::SIMPLE_INT
 # wrong constant name collect?
 # wrong constant name find_with_associations
+# uninitialized constant ActiveRecord::InternalMetadata::ACTIONS
+# uninitialized constant ActiveRecord::InternalMetadata::BLACKLISTED_CLASS_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::CALLBACKS
+# uninitialized constant ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# uninitialized constant ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
+# uninitialized constant ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name create_table
+# wrong constant name page
 # uninitialized constant ActiveRecord::LogSubscriber::BLACK
 # uninitialized constant ActiveRecord::LogSubscriber::BLUE
 # uninitialized constant ActiveRecord::LogSubscriber::BOLD
@@ -1043,6 +1063,8 @@
 # uninitialized constant ActiveRecord::Relation::STRUCTURAL_OR_METHODS
 # uninitialized constant ActiveRecord::Relation::VALID_DIRECTIONS
 # uninitialized constant ActiveRecord::Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::Schema::MigrationFilenameRegexp
+# wrong constant name define
 # wrong constant name set_value_for
 # wrong constant name value_for
 # wrong constant name suppressed
