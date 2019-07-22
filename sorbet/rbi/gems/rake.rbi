@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/rake/all/rake.rbi
 #
-# rake-12.3.2
+# rake-12.3.3
 module Rake
   def self.add_rakelib(*files); end
   def self.application; end
