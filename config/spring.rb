@@ -1,4 +1,4 @@
-# typed: strict
+# typed: false
 %w[
   .ruby-version
   .rbenv-vars

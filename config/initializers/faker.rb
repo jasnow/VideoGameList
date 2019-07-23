@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 if defined?(Faker)
   module GameProperties
     class Game < Faker::Base

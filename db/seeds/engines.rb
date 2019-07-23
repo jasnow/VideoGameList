@@ -1,4 +1,4 @@
-# typed: strict
+# typed: false
 puts "Creating Engines..."
 
 10.times do

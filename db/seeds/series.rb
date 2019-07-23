@@ -1,4 +1,4 @@
-# typed: strict
+# typed: false
 puts "Creating Series..."
 
 # Create 20 Series.

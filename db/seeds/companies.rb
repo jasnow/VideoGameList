@@ -1,4 +1,4 @@
-# typed: strict
+# typed: false
 puts "Creating Companies..."
 
 20.times do

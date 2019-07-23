@@ -1,4 +1,4 @@
-# typed: strict
+# typed: false
 puts "Creating Platforms..."
 
 # Create 20 Platforms.
