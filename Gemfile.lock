@@ -388,7 +388,7 @@ DEPENDENCIES
   rubocop (~> 0.73)
   rubocop-performance (~> 1.4)
   rubocop-rails (~> 2.2)
-  rubocop-rspec (~> 1.33)
+  rubocop-rspec (~> 1.34)
   ruby-progressbar (~> 1.10)
   selenium-webdriver (~> 3.142)
   sentry-raven (~> 2.9)
