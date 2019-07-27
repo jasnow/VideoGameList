@@ -1,4 +1,4 @@
-# typed: false
+# typed: ignore
 class DropGamesGenresTable < ActiveRecord::Migration[5.2]
   def up
     drop_table :games_genres

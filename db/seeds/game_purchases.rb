@@ -1,4 +1,4 @@
-# typed: false
+# typed: ignore
 puts "Creating Game Purchases..."
 
 # Add 3 game to each user's libraries.

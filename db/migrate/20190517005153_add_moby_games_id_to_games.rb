@@ -1,4 +1,4 @@
-# typed: true
+# typed: ignore
 class AddMobyGamesIdToGames < ActiveRecord::Migration[5.2]
   def change
     add_column :games, :mobygames_id, :text
