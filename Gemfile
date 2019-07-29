@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '~> 2.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -10,7 +10,7 @@ gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 
 # Use Puma as the app server
-gem 'puma'
+gem 'puma', '~> 4.0'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0.7'
@@ -61,9 +61,10 @@ gem 'ruby-progressbar', '~> 1.10', require: false
 # Use Sentry for error tracking in production.
 gem 'sentry-raven', '~> 2.9'
 
+# Sorbet runtime typechecker and Sorbet Rails.
 gem 'sorbet', :group => :development
 gem 'sorbet-runtime'
-gem 'sorbet-rails'
+gem "sorbet-rails", git: 'https://github.com/chanzuckerberg/sorbet-rails.git'
 gem 'dalli'    # 7/17/2019: Required by sorbet but not app.
 gem 'redis'    # 7/17/2019: Required by sorbet but not app.
 gem 'omniauth' # 7/17/2019: Required by sorbet but not app.
